@@ -1,10 +1,9 @@
 +++
-date = "2018-08-03"
-title = "Features Of CoderPortfolio"
+date = 2018-08-03T00:00:00Z
 math = "true"
+title = "Bufio Writer"
 
 +++
-
 bufio.Writer uses[]byte buffer under the hood
 
 ```
