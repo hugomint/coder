@@ -35,8 +35,28 @@
 
   <br/>
 
-  {{ if and (not (eq .Site.DisqusShortname "" )) (eq (.Params.disable_comments | default false) false)}}
-      {{ template "_internal/disqus.html" . }}
-  {{ end }}
+<section class="level has-margin-top-35">
+  <div class="level-left">
+    {{ range .Params.Tags }}
+    {{ $url := printf "/tags/%s/" . | urlize }}
+      <button class="button is-primary is-outlined has-margin-right-15">
+        <a href="{{ $url }}" >{{ . }}</a>
+      </button>
+    {{ end }}
+  </div>
+
+  <div class="level-right">
+    {{ if .PrevInSection }}
+      <button class="button is-link is-outlined has-margin-right-15">
+        <a href="{{.PrevInSection.Permalink}}">Previous Post</a>
+      </button>
+      {{ end }}
+      {{ if .NextInSection }}
+      <button class="button is-link is-outlined">
+        <a href="{{.NextInSection.Permalink}}">Next Post</a>
+      </button>
+    {{ end }}
+  </div>
+</section>
   
 </section>

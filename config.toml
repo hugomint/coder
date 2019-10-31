@@ -12,7 +12,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsUseClasses = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = false
 
 [params]
     author = "Mendo"
