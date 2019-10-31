@@ -35,7 +35,7 @@
 
   <br/>
 
-<section class="level has-margin-top-35">
+
   <div class="level-left">
     {{ range .Params.Tags }}
     {{ $url := printf "/tags/%s/" . | urlize }}
@@ -43,9 +43,7 @@
         <a href="{{ $url }}" >{{ . }}</a>
       </button>
     {{ end }}
-  </div>
 
-  <div class="level-right">
     {{ if .PrevInSection }}
       <button class="button is-link is-outlined has-margin-right-15">
         <a href="{{.PrevInSection.Permalink}}">Previous Post</a>
@@ -57,6 +55,6 @@
       </button>
     {{ end }}
   </div>
-</section>
+
   
 </section>
