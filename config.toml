@@ -1,138 +1,135 @@
 baseurl = "/"
-title = "coder"
-author = "Mr Mendes"
-# set the google analyitics ID
-googleAnalytics = "UA-someID"
-defaultContentLanguage = "en"
-language = "en-US"
-# set the pagination number
-paginate = 12
+title = "Dave"
 
-[related]
-threshold = 80.0
-includeNewer = true
-toLower = false
-  [[related.indices]]
-  name = "music"
-  weight = 90.0
-  [[related.indices]]
-  name = "key"
-  weight = 98.0
+theme = "gocoder"
+
+DefaultContentLanguage = "en"
+
+paginate = 20
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Yusuke Ishimi"
+    description = "Yusuke Ishimi's personal website"
+    keywords = "blog,developer,personal"
+    info = "WEB AND APPS ENGINEER"
+    avatarurl = "images/avatar.jpg"
+    footercontent = "Enter a text here."
+    fixedbarContent = "Do you want to know me more private?→"
+    fixedbarContentAfter = "Thank You! Please share it if you like it→"
+
+    hideCredits = false
+    hideCopyright = false
+
+    # Bottom sns share
+    snsShare = true
+    # Popular sns share
+    # if you want add sns. please message!
+    enableTwitterShare = true
+    enableFacebookShare = true
+    enableHatenaShare = true
+    enableLineShare = true
+    enableLinkedInShare = true
+
+    thumbnail = "images/tn.png"
+
+    # Custom CSS
+    custom_css = []
+
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+    langseparator = "|"
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/naro143/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 2
+    url = "https://twitter.com/naro143/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 3
+    url = "https://www.linkedin.com/in/naro143/"
+[[params.social]]
+    name = "LinkedIn"
+    weight = 4
+    url = "https://www.linkedin.com/in/naro143/"
+
+[languages]
+    [languages.en]
+        languagecode = "en"
+        languagename = "English" # The language name to be displayed in the selector.
+        title = "Yusuke Ishimi"
+
+        # You can configure the theme parameter for each language.
+        [languages.en.params]
+            author = "Yusuke Ishimi"
+            info = "WEB AND APPS ENGINEER"
+            description = "Yusuke Ishimi's personal website"
+            keywords = "blog,developer,personal"
+
+        [languages.en.menu] # It is possible to change the menu too.
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 1.0
+                url = "about"
+
+            [[languages.en.menu.main]]
+                name = "Blog"
+                weight = 2.0
+                url = "posts"
+
+            [[languages.en.menu.main]]
+                name = "Projects"
+                weight = 3
+                url = "projects"
+            [[languages.en.menu.main]]
+                name = "Contact me"
+                weight = 5
+                url = "contact"
 
 
+    [languages.ja]
+        languagecode = "ja"
+        languagename = "Japanese"
+        title = "石見 優丞"
 
-# needed for the seach page
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-# add the theme folder
-# theme = "fre"
+        [languages.ja.params]
+            author = "石見 優丞"
+            description = "石見のサイト"
+            keywords = "blog,developer,strona domowa"
+            info = "WEBとアプリのエンジニア"
 
-[taxonomies]
-  taxonomy = "tags"
-  # used for open graph
-  # series = "series"
-  # cat = "cat"
-
-# [menu]
-#   [[menu.main]]
-#     identifier = "blog"
-#     name = "Blog"
-#     title = "Articles"
-#     url = "/posts/"
-#     weight = 90
-#   [[menu.footer]]
-#     identifier = "blog"
-#     name = "Blog"
-#     title = "Articles"
-#     url = "/posts/"
-#     weight = 90
-
-# [params]
-#   description = "Some description about the site."
-#   favicon = "favicon.ico"
-#   mainSections = ["posts", "slider"]
-#   logo = ""
-#   images = ["site-feature-image.jpg"]
-#   title = "My cool site"
-
-# [params.hero]
-#     textColor = "" # Empty for default color
-
-# [params.cta] # Call To Action 
-#     show = true
-#     cta = "Contact"
-#     link = "contact" # Relative URL
-
-# [params.separator] # Separators between sections on the home page
-#     show = true
-
-# [params.fa] # Font Awesome options
-#     version = "5.7.2"
-#     integrity = "sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-
-# [params.form] # Contact form
-#     netlify = true
-#     action = "https://formspree.io/your@email.com"
-#     method = "POST"
-#     inputNameName = "name"
-#     inputNameLabel = "Name"
-#     inputNamePlaceholder = "Your name"
-#     inputEmailName = "email"
-#     inputEmailLabel = "Email"
-#     inputEmailPlaceholder = "Your email"
-#     inputMsgName = "message"
-#     inputMsgLabel = "Write something"
-#     inputMsgLength = 750
-#     inputSubmitValue = "Send"
-
-# [params.posts]
-#     showAuthor = true
-#     showDate = true
-#     showTags = true
-#     dateFormat = "Monday, Jan, 2006"
-
-# [params.contact] # Contact info
-#     email = "example@gmail.com"
-#     phone = "xxx xxx xxx"
-#     skype = ""
-#     address = "10 Oasis Court, Clontarf"
-
-# [params.social]
-#     twitter = "https://instagram.com/john"
-#     facebook = ""
-#     github = ""
-#     gitlab = ""
-#     codepen = ""
-#     instagram = ""
-#     pinterest = ""
-#     youtube = ""
-#     linkedin = ""
-#     weibo = ""
-#     mastodon = ""
-#     tumblr = ""
-#     flickr = ""
-#     "500px" = ""
-
-# [params.copy] # Copyright
-#     copy = "" # Empty for default content
-
-# [privacy]
-#     [privacy.googleAnalytics]
-#         anonymizeIP = true
-#         disable = false
-#         respectDoNotTrack = true
-#         useSessionStorage = false
-#     [privacy.instagram]
-#         disable = false
-#         simple = false
-#     [privacy.twitter]
-#         disable = false
-#         enableDNT = true
-#         simple = false
-#     [privacy.vimeo]
-#         disable = false
-#         simple = false
-#     [privacy.youtube]
-#         disable = false
-#         privacyEnhanced = true
-
+        [languages.ja.menu]
+            [[languages.ja.menu.main]]
+                name = "テーマについて"
+                weight = 1.0
+                url = "ja/about"
+            [[languages.ja.menu.main]]
+                name = "ブログ"
+                weight = 2.0
+                url = "ja/posts"
+            [[languages.ja.menu.main]]
+                name = "プロジェクト"
+                weight = 3
+                url = "ja/projects"
+            [[languages.ja.menu.main]]
+                name = "お問い合わせ"
+                weight = 5
+                url = "ja/contact"
