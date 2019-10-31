@@ -6,42 +6,46 @@ tags = ["server"]
 title = "http server"
 
 +++
+
 > This line is part of the same quote.
 > <code>func (w http.ResponseWriter, r *http.Request)</code>
-Emphasis, aka italics, with *asterisks* or _underscores_.
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-Combined emphasis with **asterisks and _underscores_**.
-Strikethrough uses two tildes. \~\~Scratch this.\~\~
+> Emphasis, aka italics, with *asterisks\* or _underscores_.
+> Strong emphasis, aka bold, with **asterisks** or **underscores**.
+> Combined emphasis with **asterisks and _underscores_**.
+> Strikethrough uses two tildes. ~~Scratch this.~~
 
-\#### Registering a Request Handler
+#### Registering a Request Handler
 
 First, create a Handler which receives all incomming HTTP connections from browsers, HTTP clients or API requests. A handler in Go is a function with this signature:
-\`\`\`
+
+```
 func (w http.ResponseWriter, r *http.Request)
-\`\`\`
+```
+
 The function receives two parameters:
 
-\+ An http.ResponseWriter which is where you write your text/html response to.
-\+ An http.Request which contains all information about this HTTP request including things like the URL or header fields.
+- An http.ResponseWriter which is where you write your text/html response to.
+- An http.Request which contains all information about this HTTP request including things like the URL or header fields.
 
-\#### Registering a request handler to the default HTTP Server is as simple as this:
+#### Registering a request handler to the default HTTP Server is as simple as this:
 
-\`\`\`
+```
 http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hello, you've requested: %s\\n", r.URL.Path)
+    fmt.Fprintf(w, "Hello, you've requested: %s\n", r.URL.Path)
 })
-\`\`\`
+```
 
-\#### Listen for HTTP Connections
+#### Listen for HTTP Connections
 
 The request handler alone can not accept any HTTP connections from the outside. An HTTP server has to listen on a port to pass connections on to the request handler. Because port 80 is in most cases the default port for HTTP traffic, this server will also listen on it.
 
 The following code will start Go’s default HTTP server and listen for connections on port 80. You can navigate your browser to http://localhost/ and see your server handing your request.
-\`\`\`
-http.ListenAndServe(":80", nil)
-\`\`\`
 
-\`\`\`
+```
+http.ListenAndServe(":80", nil)
+```
+
+```
 package main
 
 import (
@@ -51,14 +55,14 @@ import (
 
 func main() {
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "Hello, you've requested: %s\\n", r.URL.Path)
+        fmt.Fprintf(w, "Hello, you've requested: %s\n", r.URL.Path)
     })
 
     http.ListenAndServe(":80", nil)
 }
-\`\`\`
+```
 
-\`\`\`
+```
 package main
     import (
     "log"
@@ -67,7 +71,7 @@ package main
 // Define a home handler function which writes a byte slice containing
 // "Hello from Snippetbox" as the response body.
 func home(w http.ResponseWriter, r *http.Request) {
-    w.Write(\[\]byte("Hello from Snippetbox"))
+    w.Write([]byte("Hello from Snippetbox"))
 }
 func main() {
 // Use the http.NewServeMux() function to initialize a new servemux, then
@@ -83,4 +87,4 @@ func main() {
     err := http.ListenAndServe(":4000", mux)
     log.Fatal(err)
 }
-\`\`\`
+```
