@@ -1,9 +1,9 @@
 +++
-categories = ["Development", "golang"]
-date = 2014-04-02T00:00:00Z
-slug = "hugo-template-primer"
-tags = ["go", "golang", "templates", "themes", "development"]
-title = "(Hu)go Template Primer"
+categories = ["http"]
+date = 2019-10-30T14:00:00Z
+slug = "http-server"
+tags = ["server"]
+title = "http server"
 
 +++
 > This line is part of the same quote.
