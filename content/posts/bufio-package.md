@@ -6,7 +6,7 @@ tags = ["server"]
 title = "Bufio Writer"
 
 +++
-    bufio.Writer uses[]byte buffer under the hood
+bufio.Writer uses\[\]byte buffer under the hood
 
     package main
     
