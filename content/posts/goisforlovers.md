@@ -6,7 +6,7 @@ tags = ["server"]
 title = "http server"
 
 +++
-> Lena. This line is part of the same quote. <code>func (w http.ResponseWriter, r *http.Request)</code> Emphasis, aka italics, with *asterisks* or _underscores_.
+> Lena great. This line is part of the same quote. <code>func (w http.ResponseWriter, r *http.Request)</code> Emphasis, aka italics, with _asterisks_ or _underscores_.
 > Strong emphasis, aka bold, with **asterisks** or **underscores**.
 > Combined emphasis with **asterisks and _underscores_**.
 > Strikethrough uses two tildes. ~~Scratch this.~~
@@ -35,7 +35,7 @@ The request handler alone can not accept any HTTP connections from the outside. 
 The following code will start Go’s default HTTP server and listen for connections on port 80. You can navigate your browser to http://localhost/ and see your server handing your request.
 
     http.ListenAndServe(":80", nil)
-
+    
     package main
     
     import (
@@ -50,7 +50,7 @@ The following code will start Go’s default HTTP server and listen for connecti
     
         http.ListenAndServe(":80", nil)
     }
-
+    
     package main
         import (
         "log"
