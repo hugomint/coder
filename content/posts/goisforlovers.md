@@ -6,6 +6,8 @@ tags = ["server"]
 title = "http server"
 
 +++
+### Sweet
+
 #### Registering a Request Handler please
 
 First, create a Handler which receives all in coming HTTP connections from browsers, HTTP clients or API requests. A handler in Go is a function with this signature:
