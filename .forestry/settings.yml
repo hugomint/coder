@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: https://api.render.com/deploy/srv-bn0koe9q85v1d0eavqn0?key=g292UVo25cA
 sections:
+- type: document
+  path: ''
+  label: Config
+  match: "**/*"
 - type: directory
   path: content
   label: Pages
