@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: https://api.render.com/deploy/srv-bn0koe9q85v1d0eavqn0?key=g292UVo25cA
 sections:
 - type: document
-  path: config.yaml
+  path: config.toml
   label: Config
 - type: directory
   path: content
