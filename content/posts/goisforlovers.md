@@ -6,7 +6,7 @@ tags = ["server"]
 title = "http server"
 
 +++
-### Sweet
+### Sweet webhooks
 
 #### Registering a Request Handler please
 
