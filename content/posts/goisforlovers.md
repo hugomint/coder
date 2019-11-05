@@ -8,6 +8,8 @@ title = "http server"
 +++
 ### Sweet webhooks no need for render webhook on github
 
+[2hoSrjM](https://flic.kr/p/2hoSrjM "2hoSrjM")
+
 #### Registering a Request Handler please
 
 First, create a Handler which receives all in coming HTTP connections from browsers, HTTP clients or API requests. A handler in Go is a function with this signature:
