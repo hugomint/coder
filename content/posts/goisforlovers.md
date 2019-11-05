@@ -6,7 +6,7 @@ tags = ["server"]
 title = "http server"
 
 +++
-> Lena jk finally works sweet. This line is part of the same quote. <code>func (w http.ResponseWriter, r *http.Request)</code> Emphasis, aka italics, with _asterisks_ or _underscores_.
+> This line is part of the same quote. <code>func (w http.ResponseWriter, r *http.Request)</code> Emphasis, aka italics, with _asterisks_ or _underscores_.
 > Strong emphasis, aka bold, with **asterisks** or **underscores**.
 > Combined emphasis with **asterisks and _underscores_**.
 > Strikethrough uses two tildes. ~~Scratch this.~~
