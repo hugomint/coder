@@ -8,6 +8,8 @@ title = "Bufio Writer"
 +++
 bufio.Writer uses\[\]byte buffer under the hood
 
+![](https://forestrytesting.s3.us-east-1.amazonaws.com/20191030_153249-403x227.jpg)
+
     package main
     
     type Writer intfunc (*Writer) Write(p []byte) (n int, err error) {
