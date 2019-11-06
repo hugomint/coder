@@ -8,7 +8,7 @@ title = "Bufio Writer"
 +++
 bufio.Writer uses\[\]byte buffer under the hood
 
-![](https://forestrytesting.s3.us-east-1.amazonaws.com/20191030_153249-403x227.jpg)
+![](https://forestrytesting.s3.us-east-1.amazonaws.com/20191106_160823-226x402.jpg)
 
     package main
     
