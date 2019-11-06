@@ -17,6 +17,8 @@ Have questions or suggestions? Feel free to [open an issue on GitHub](https://gi
 
 ***
 
+![god](https://forestrytesting.s3.us-east-1.amazonaws.com/20191106_142649-558x652.jpg "pic")
+
 Hugo is a static site engine written in Go.
 
 It makes use of a variety of open source projects including:
