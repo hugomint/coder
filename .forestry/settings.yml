@@ -17,7 +17,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
-upload_dir: forestrytesting
+upload_dir: https://forestrytesting.s3.us-east-1.amazonaws.com
 public_path: https://forestrytesting.s3.us-east-1.amazonaws.com
 front_matter_path: ''
 use_front_matter_path: 
